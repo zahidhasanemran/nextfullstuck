@@ -48,6 +48,11 @@
   position: relative;
 }
 
+.imgContainer img{
+  max-width: 100%;
+  height: auto;
+}
+
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
