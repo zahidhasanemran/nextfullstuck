@@ -12,15 +12,12 @@ export const metadata = {
 };
 
 const ContactPage = () => {
-  // const a = Math.random();
-
-  // console.log(a);
-
   return (
     <div className={styles.container}>
       <div className={styles.imgContainer}>
         <Image src="/contact.png" alt="" fill className={styles.img} />
       </div>
+     
       <div className={styles.formContainer}>
         {/* <HydrationTestNoSSR/> */}
         {/* <div suppressHydrationWarning>{a}</div> */}
