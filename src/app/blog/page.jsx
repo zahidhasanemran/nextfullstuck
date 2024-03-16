@@ -13,6 +13,12 @@ const getData = async () => {
   return res.json();
 };
 
+export const metadata = {
+  title: "Blog Page",
+  description: "Blog description",
+};
+
+
 
 const BlogPage = async () => {
 

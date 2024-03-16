@@ -7,8 +7,8 @@ import ClientSideProviderTest from "@/components/clientSideProviderTest";
 
 export const metadata = {
   title: {
-    default:"Next.js 14 Homepage",
-    template:"%s | Next.js 14"
+    default:"Fullstack Blog",
+    // template:"%s | Next.js 14"
   },
   description: "Next.js starter app description",
 };
