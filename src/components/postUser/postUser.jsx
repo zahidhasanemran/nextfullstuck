@@ -14,12 +14,12 @@ const getData = async (userId) => {
 };
 
 const PostUser = async ({ userId }) => {
-  // FETCH DATA WITH AN API
-  const user = await getData(userId);
-  // console.log(user);
+
+  // const user = await getData(userId);
 
   // FETCH DATA WITHOUT AN API
-  // const user = await getUser(userId);
+  const user = await getUser(userId);
+  // console.log();
 
   return (
     <div className={styles.container}>

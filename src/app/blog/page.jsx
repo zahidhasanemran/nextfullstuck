@@ -17,7 +17,7 @@ const getData = async () => {
 const BlogPage = async () => {
 
   // FETCH DATA WITH AN API
-  const posts = await getData();
+  const posts = await getPosts();
 
   // console.log(posts);
 

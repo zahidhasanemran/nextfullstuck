@@ -3,6 +3,7 @@ import styles from "./singlePost.module.css";
 import PostUser from "@/components/postUser/postUser";
 import { Suspense } from "react";
 import Image from "next/image";
+import { getPost } from '@/lib/data'
 
 // FETCH DATA WITH AN API
 const getData = async (slug) => {
@@ -29,7 +30,9 @@ const getData = async (slug) => {
 
 const SingleBlog = async ({params}) => {
 
-  const post = await getData(params.id)
+  // console.log(params);
+  // const post = await getData(params.id)
+  const post = await getPost(params.slug)
   // console.log(post);
 
 
@@ -37,7 +40,7 @@ const SingleBlog = async ({params}) => {
     <div className={styles.container}>
       
         <div className={styles.imgContainer}>
-          <Image src={"/test.png"} alt="" fill className={styles.img} />
+          <Image src={ post.img ? post.img : "/test.png"} alt="" fill className={styles.img} />
         </div>
       
       <div className={styles.textContainer}>
@@ -55,7 +58,7 @@ const SingleBlog = async ({params}) => {
             </span> */}
           </div>
         </div>
-        <div className={styles.content}>{post.body}</div>
+        <div className={styles.content}>{post.desc}</div>
       </div>
     </div>
   );
