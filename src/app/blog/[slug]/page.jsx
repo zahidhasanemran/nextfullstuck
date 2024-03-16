@@ -16,16 +16,16 @@ const getData = async (slug) => {
   return res.json();
 };
 
-// export const generateMetadata = async ({ params }) => {
-//   const { slug } = params;
+export const generateMetadata = async ({ params }) => {
+  const { slug } = params;
 
-//   const post = await getPost(slug);
+  const post = await getPost(slug);
 
-//   return {
-//     title: post.title,
-//     description: post.desc,
-//   };
-// };
+  return {
+    title: post.title,
+    description: post.desc,
+  };
+};
 
 
 const SingleBlog = async ({params}) => {
